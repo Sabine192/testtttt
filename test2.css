@@ -1,0 +1,216 @@
+.col-1 {
+    background-color: #ffffff;
+}
+
+.col-2 {
+    width: 16.66%;
+    background-color: #dfaf78;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e68c5b;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    z-index: 2;
+    margin: 0; 
+    height: auto; 
+    
+}
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Tekst naar links uitlijnen */
+    border-bottom: 4px solid #f5dd57;
+    background-color: #c95a39;
+    padding: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: left; /* Tekst naar links uitlijnen */
+
+}
+nav ul li {
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav ul li a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #c95a39;
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* of position: sticky; */
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; /* z-index naar wens aanpassen, afhankelijk van de overlappende elementen */
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+img {
+    float: right;
+}
+
+.imgjesse {
+    float: left;
+}
+
+.col-2 {
+    height: 1000px; /* Verander de hoogte naar 600 pixels */
+}
+
+.col-9 h2 {
+    color: orange;
+}
+
+h2.black-text {
+    color: black;
+}
+
+h1.orange-text{
+    color: orange;
+}
+
+.over-about {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Horizontaal centreren */
+    align-items: center; /* Verticaal centreren */
+    margin-bottom: 20px; /* Voeg wat ruimte onder de afbeelding toe voor duidelijkheid */
+}
+
+.about-left-section {
+    display: flex;
+    flex-direction: column; /* Zorg ervoor dat de elementen onder elkaar worden weergegeven */
+}
+
+.over-about {
+    order: 2; /* Zet de tekst na de afbeelding */
+}
+
+.image-container img {
+    max-width: 100%; /* Zorg ervoor dat de afbeelding niet groter wordt dan de container */
+}
+
+.image-container2 {
+    display: flex;
+    justify-content: flex-start; /* Uitlijnen naar links */
+    align-items: center; /* Verticaal centreren */
+    margin-bottom: 20px; /* Voeg wat ruimte onder de afbeelding toe voor duidelijkheid */
+}
+
+input[type="text"],
+select {
+    width: calc(100%); /* Adjust width as needed */
+        margin-bottom: 10px; /* Add some space between fields */
+        height: 40px; /* Pas de hoogte van de invoervelden aan */
+}
+textarea {
+    width: calc(100%); /* Adjust width as needed */
+    height: 400px; /* Pas de hoogte van de invoervelden aan */
+
+}
+.tarieven-pagina h3,
+    .tarieven-pagina p {
+        display: inline;
+    }
+  
+
+@media only screen and (max-width: 768px) {
+    .nav-container {
+        display: flex;
+        justify-content: center; /* Horizontaal centreren */
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column; /* Stapel de navigatie-items op elkaar */
+        align-items: flex-start; /* Links uitlijnen */
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center; /* Tekst naar het midden uitlijnen */
+    }
+
+    footer {
+        position: relative; /* Schakel relatieve positionering van de footer in op mobiel */
+    }
+
+    .col-2 {
+        height: auto; /* Automatische hoogte op mobiel */
+    }
+}
